@@ -1,0 +1,282 @@
+/* GENERALES*/
+:root{
+  --fondo: #1B2223;
+  --oscuro: #3A4F50;
+  --contenedores: #3c6365;
+  --aqua: #0EF6CC;
+  --blanco: #F4FEFD;
+  --fuente: 'Merriweather', serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 auto;
+  background-color: var(--blanco);
+  color: var(--fondo);
+  font-family: var(--fuente);
+
+}
+
+/* HEADER y NAVEGACION */
+.header{
+  background-color: var(--oscuro);
+  padding: 16px;
+}
+
+.navegacion{
+  display: flex;
+}
+.navegacion .logo {
+  flex-grow: 2;
+  font-size: 24px;
+  color: var(--blanco);
+}
+
+.navegacion .logo span{
+  color: var(--aqua);
+  font-style: italic;
+}
+.navegacion ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navegacion a{
+  text-decoration: none;
+  color: var(--blanco);
+  font-weight: 700;
+  margin-right: 20px;
+  transition: all 300ms;
+}
+
+.navegacion a:hover{
+  color: var(--aqua);
+}
+
+.navegacion .activado{
+  color: var(--aqua);
+  font-weight: bold;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+.contenido-principal{
+  margin: 0px auto;
+  min-height: 600px;
+  display: flex;
+}
+.contenido-principal .content{
+  flex-grow: 8;
+}
+
+.content{
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+
+.contenedor{
+  background-color: white;
+  padding: 18px;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 0px 0px 6px #565656a3;
+  text-align: center;
+}
+
+.jumbo{
+  padding: 40px;
+}
+
+.jumbo h1{
+  margin-bottom: 30px;
+}
+.jumbo p{
+  margin: 20px;
+}
+
+.lateral{
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* ARTICULOS */
+.articulo{
+  margin-bottom: 30px;
+}
+.articulo .mascara{
+  width: 400px;
+  margin: 0 auto;
+}
+.articulo h3{
+  margin: 2px;
+  font-size: 24px;
+}
+
+.articulo h3 a{
+  color: var(--fondo);
+  text-decoration: none;
+}
+
+.articulo h3 a:hover{
+  color: var(--aqua);
+}
+
+.articulo .mascara img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 260px;
+}
+
+.boton-articulo-editar,
+.boton-articulo-borrar{
+  margin: 8px;
+}
+
+.articulo-solo .mascara img{
+  width: 500px;
+  margin: 10px auto
+}
+
+
+.button,
+input[type="text"],
+textarea,
+input[type="button"]{
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #ededed;
+  color: #454545;
+  width: 100%;
+  opacity: 4;
+  outline: 0;
+  border-color: transparent;
+}
+
+
+.button,
+button,
+input[type="submit"],
+input[type="button"],
+.boton-articulo-editar{
+  
+  width: 135px;
+  text-decoration: none;
+  background: var(--contenedores);
+  color: white;
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 15px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+button,
+.boton-articulo-editar{
+  width: 100px;
+}
+
+
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover{
+  background-color: var(--fondo);
+}
+
+.boton-articulo-editar:hover{
+  background-color: #e77b00;
+}
+
+.boton-articulo-borrar:hover{
+  background-color: #b00b0b;
+}
+
+
+/* FORMULARIO */
+.form-group{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-group .mascara{
+  width: 200px;
+  margin: 5px;
+}
+.form-group .mascara img{
+  width: 200px;
+  height: 200px;
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group input[type="file"]{
+  border: 1px solid #ddd;
+  outline: 0;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  resize: none;
+}
+.form-group textarea{
+  height: 80px;
+}
+
+.form-group label{
+  display: block;
+  text-align: left;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+
+/* FOOTER */
+.footer{
+  display: flex;
+  height: 70px;
+  align-items: center;
+  bottom: 0px;
+  width: 100%;
+  background-color: var(--oscuro);
+  padding: 20px;
+}
+.footer h3{
+  flex-grow: 3;
+  color: var(--blanco);
+}
+.redes{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.redes li{
+  align-items: center;
+}
+.redes img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  transition: all 300ms;
+  align-items: center;
+  
+}
+
+.redes img:hover{
+  transform: scale(1.2, 1.2);
+}
