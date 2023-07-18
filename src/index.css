@@ -167,7 +167,8 @@ input[type="button"]{
 button,
 input[type="submit"],
 input[type="button"],
-.boton-articulo-editar{
+.boton-articulo-editar,
+.sobre-mi a{
   
   width: 135px;
   text-decoration: none;
@@ -194,7 +195,8 @@ button,
 .button:hover,
 button:hover,
 input[type="button"]:hover,
-input[type="submit"]:hover{
+input[type="submit"]:hover,
+.sobre-mi a:hover{
   background-color: var(--fondo);
 }
 
@@ -241,6 +243,26 @@ input[type="submit"]:hover{
   text-align: left;
   color: #444;
   margin-bottom: 8px;
+}
+
+/* Sobre mi */
+.sobre-mi{
+  width: 900px;
+  margin: 10px auto;
+}
+.contenedor_imagen{
+  height: auto;
+  width: 200px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.contenedor_imagen img{
+  width: 100%;
+
+}
+.sobre-mi p{
+  text-align: justify;
 }
 
 
